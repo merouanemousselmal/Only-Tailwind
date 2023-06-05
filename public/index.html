@@ -8,36 +8,39 @@
     <link rel="stylesheet" href="output.css" />
     <title>only talwind</title>
   </head>
-  <body>
+  <body class="dark:bg-my-gray">
     <header
-      class="flex justify-between px-8 items-center py-3 bg-transparent lg:justify-evenly"
+      class="flex justify-between px-8 items-center py-3 bg-transparent dark:bg-my-gray lg:justify-evenly"
     >
-      <a href="#" class="text-3xl font-bold tracking-wide">Classix</a>
+      <a href="#" class="text-3xl font-bold tracking-wide dark:text-white">Classix</a>
       <ul
         class="hidden sm:flex gap-x-8 text-lg lg:text-xl tracking-wide font-semibold"
       >
         <li
-          class="hover:-translate-y-1 hover:text-slate-500 transition duration-300"
+          class="hover:-translate-y-1 hover:text-slate-500 transition duration-300 dark:text-white"
         >
           <a href="#home">Home</a>
         </li>
         <li
-          class="hover:-translate-y-1 hover:text-slate-500 transition duration-300"
+          class="hover:-translate-y-1 hover:text-slate-500 transition duration-300 dark:text-white"
         >
           <a href="#featured">Featured</a>
         </li>
         <li
-          class="hover:-translate-y-1 hover:text-slate-500 transition duration-300"
+          class="hover:-translate-y-1 hover:text-slate-500 transition duration-300 dark:text-white"
         >
           <a href="#new">New</a>
         </li>
         <li
-          class="hover:-translate-y-1 hover:text-slate-500 transition duration-300"
+          class="hover:-translate-y-1 hover:text-slate-500 transition duration-300 dark:text-white"
         >
           <a href="#contact">Contact</a>
         </li>
       </ul>
       <div class="flex gap-x-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 cursor-pointer hover:stroke-slate-500 hover:-translate-y-1 transition duration-300 toggle-dark dark:stroke-white">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+        </svg>
         <a href="#"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +48,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-9 h-9 hover:stroke-slate-500 hover:-translate-y-1 transition duration-300"
+            class="w-9 h-9 hover:stroke-slate-500 hover:-translate-y-1 transition duration-300 dark:stroke-white"
           >
             <path
               stroke-linecap="round"
@@ -60,7 +63,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-13 h-10 cursor-pointer sm:hidden hover:stroke-slate-700 hover:-translate-y-1 transition duration-300"
+          class="w-13 h-10 cursor-pointer sm:hidden hover:stroke-slate-700 hover:-translate-y-1 transition duration-300 dark:stroke-white"
         >
           <path
             stroke-linecap="round"
@@ -68,6 +71,7 @@
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
+        
       </div>
     </header>
 
@@ -99,7 +103,7 @@
     <!----featured--->
     <section class="mb-10" id="featured">
       <div>
-        <h2 class="text-center my-9 font-bold text-4xl">Featured Categories</h2>
+        <h2 class="text-center my-9 font-bold text-4xl dark:text-white">Featured Categories</h2>
       </div>
 
       <div class="grid  justify-center gap-y-8 md:grid-cols-2 md:justify-items-center 2xl:grid-cols-3 2xl:px-40">
@@ -172,38 +176,38 @@
   <!----new--->
 	<section id="new">
 		<div>
-			<h2 class="text-center my-9 font-bold text-4xl">New Arrivals</h2>
+			<h2 class="text-center my-9 font-bold text-4xl dark:text-white">New Arrivals</h2>
 		</div>
 
-		<div class="grid grid-cols-1 justify-center gap-y-8 md:grid-cols-2 md:justify-items-center 2xl:grid-cols-3 2xl:px-40">
+		<div class="grid justify-center gap-y-8 md:grid-cols-2 md:justify-items-center 2xl:grid-cols-3 2xl:px-40">
 			<div class="relative cursor-pointer hover:scale-90 transition duration-300">
 				<img class="" src="img/tren1.jpg">
-				<h5 class="text-center font-semibold tracking-wider mt-4">Lorem Ipsum dizgi</h5>
-				<h6 class="text-center font-bold mb-4">$188</h6>
+				<h5 class="text-center font-semibold tracking-wider mt-4 dark:text-white">Lorem Ipsum dizgi</h5>
+				<h6 class="text-center font-bold mb-4 dark:text-white">$188</h6>
 				<div class="absolute top-0 bg-slate-700 text-white tracking-widest ">
 					<h4 class="px-4 font-semibold">Sale</h4>
 				</div>
 			</div>
 			<div class="relative cursor-pointer hover:scale-90 transition duration-300">
 				<img src="img/tren2.jpg">
-				<h5 class="text-center font-semibold tracking-wider mt-4">Lorem Ipsum dizgi</h5>
-				<h6 class="text-center font-bold mb-4">$188</h6>
+				<h5 class="text-center font-semibold tracking-wider mt-4 dark:text-white">Lorem Ipsum dizgi</h5>
+				<h6 class="text-center font-bold mb-4 dark:text-white">$188</h6>
 				<div class="  absolute top-0 bg-slate-700 text-white tracking-widest ">
 					<h4 class="px-4 font-semibold">Sale</h4>
 				</div>
 			</div>
 			<div class="relative cursor-pointer hover:scale-90 transition duration-300">
 				<img src="img/tren3.jpg">
-				<h5 class="text-center font-semibold tracking-wider mt-4">Lorem Ipsum dizgi</h5>
-				<h6 class="text-center font-bold mb-4">$188</h6>
+				<h5 class="text-center font-semibold tracking-wider mt-4 dark:text-white">Lorem Ipsum dizgi</h5>
+				<h6 class="text-center font-bold mb-4 dark:text-white">$188</h6>
 				<div class="  absolute top-0 bg-slate-700 text-white tracking-widest ">
 					<h4 class="px-4 font-semibold">Sale</h4>
 				</div>
 			</div>
 			<div class="relative cursor-pointer hover:scale-90 transition duration-300 mb-11">
 				<img src="img/tren4.jpg">
-				<h5 class="text-center font-semibold tracking-wider mt-4">Lorem Ipsum dizgi</h5>
-				<h6 class="text-center font-bold mb-4">$188</h6>
+				<h5 class="text-center font-semibold tracking-wider mt-4 dark:text-white">Lorem Ipsum dizgi</h5>
+				<h6 class="text-center font-bold mb-4 dark:text-white">$188</h6>
 				<div class="  absolute top-0 bg-slate-700 text-white tracking-widest ">
 					<h4 class="px-4 font-semibold">Sale</h4>
 				</div>
@@ -213,7 +217,7 @@
 
 
   <!----contact--->
-	<section class="grid md:grid-cols-2 lg:grid-cols-4 md:justify-items-center lg:grid-rows-4 gap-4 p-6 bg-slate-700 id="contact">
+	<section class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-rows-1 md:justify-items-center gap-4 p-6 bg-slate-700" id="contact">
 		<div class="mb-4">
 			<h3 class="text-3xl font-bold text-white">Classix</h3>
 			<h5 class="text-slate-500 font-semibold">Let's Connect With Us</h5>
@@ -257,5 +261,6 @@
 	<div class="text-center text-slate-500 bg-slate-700">
 		<p>Copyright © 2023 All rights reserved | This template is made using tailwind</p>
 	</div>
+  <script src="script.js"></script>
   </body>
 </html>
